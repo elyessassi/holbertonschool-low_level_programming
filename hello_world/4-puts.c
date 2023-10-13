@@ -1,8 +1,12 @@
 
 #include <stdio.h>
 
-int main()
+/**
+ * this fonction prints "Programming is like building a multilingual puzzle 
+ */
+
+int main(void)
 {
 	puts("Programming is like building a multilingual puzzle");
-	return 0;
+	return(0);
 }
