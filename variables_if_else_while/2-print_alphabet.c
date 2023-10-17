@@ -10,9 +10,11 @@ int main(void)
 	int x;
 
 	for (x = 'a' ; x <= 'z' ; x++)
+	{
 		putchar(x);
 		if (x == 'z')
-			printf("/n");
+			putchar("/n");
+	}
 	return (0);
 }	
 
