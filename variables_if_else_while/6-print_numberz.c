@@ -10,6 +10,6 @@ int main(void)
     
     for (; x <= 9 ; x++)
         putchar(x);
-    return (0);
+    return (48 + x);
 
 }
