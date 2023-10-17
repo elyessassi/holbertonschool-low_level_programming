@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    int x == 48;
+    int x = 48;
 
     for (; x <= 57 ; x++)
         putchar("%d, ",x );
