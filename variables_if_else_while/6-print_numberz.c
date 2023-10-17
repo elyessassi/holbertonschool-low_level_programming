@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int x = 0 ;
+	int x = 0;
 
 	for (; x <= 9 ; x++)
 		putchar(48 + x);
