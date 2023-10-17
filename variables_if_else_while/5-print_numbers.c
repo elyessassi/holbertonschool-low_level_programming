@@ -6,8 +6,8 @@
 int main(void)
 {
     int x = 0;
-    for (x == 0 ; x <= 9 ; x++)
+    for (; x <= 9 ; x++)
         printf("%d",x );
-    printf("\n")
-    return (0)
+    printf("\n");
+    return (0);
 }
