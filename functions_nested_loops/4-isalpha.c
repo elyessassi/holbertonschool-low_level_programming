@@ -2,7 +2,7 @@
 
 /**
 *_isalpha - detect alpha letters
-*@c - character to test
+*@c: character to test
 *Return: 1 the character is alpha 0 if not
 */
 
