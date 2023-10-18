@@ -7,9 +7,15 @@
 
 
 
-int main()
+void print_alphabet(void);
 {
-	print_alphabet(x);
+	int x;
+
+	for (x = 'a' ; x <= 'z' ; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
 	return (0);
 }
 
