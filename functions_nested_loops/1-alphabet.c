@@ -9,17 +9,17 @@ int main()
 	
 
 
-void print_alphabet(void)
-{
-	int x == 97;
-
-	for (; x <= 123 ; x++)
+	void print_alphabet(void)
 	{
-		_putchar(x);
-	}
-	return ;
+		int x == 97;
 
-}
-return (0);
+		for (; x <= 123 ; x++)
+		{
+			_putchar(x);
+		}
+		return ;
+
+	}
+	return (0);
 }
 
