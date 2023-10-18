@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * main - entry point
@@ -8,5 +7,6 @@
 
 int main(void)
 {
-    write("_putchar")
+    _putchar("_putchar");
+    return (0);
 }
