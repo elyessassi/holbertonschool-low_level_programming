@@ -8,10 +8,11 @@
 
 int _abs(int)
 {
-    if (int < 0)
+    int x = int
+    if (x < 0)
     {
-        return (int*-1),
+        return (x*-1),
     else
-        return (int)
+        return (x)
     }
 }
