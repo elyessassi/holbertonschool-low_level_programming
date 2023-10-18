@@ -2,7 +2,7 @@
 
 /**
  * print_sign - printing sign
- * @n integer to be tested
+ * @n: integer to be tested
  * Return: 0 if zero 1 if positive -1 if negative
  */
 
