@@ -8,7 +8,7 @@
 
 int _abs(int)
 {
-    int x = int
+    int.x = int
     if (x < 0)
     {
         return (x*-1),
