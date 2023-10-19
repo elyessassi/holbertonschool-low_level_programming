@@ -6,13 +6,14 @@
  * 
 */
 
-int _abs(int)
+int _abs(int x)
 {
-    int.x = int
+    x = 0;
+
     if (x < 0)
     {
-        return (x*-1),
+        return (x*-1);
     else
-        return (x)
+        return (x);
     }
 }
