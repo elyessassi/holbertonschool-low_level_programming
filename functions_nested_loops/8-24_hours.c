@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * 
+ *jack_bauer - display every minute of the day
+ *
  * 
 */
 
 void jack_bauer(void)
 {
-    int a;
-    int b;
+	int a;
+	int b;
 	int c;
 	int d;
 
@@ -33,6 +34,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-
-    
 }
