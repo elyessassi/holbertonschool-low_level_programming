@@ -3,9 +3,6 @@
 
 /**
  *times_table - a function that prints the 9 times table
- *@x: int to test
- *@y: int to test
- *@multi: int to test
 */
 
 void times_table(void)
@@ -13,12 +10,11 @@ void times_table(void)
 	int x;
 	int y;
 	int multi;
-	
+
 
 
 	for (x = 0; x <= 9 ; x++)
 	{
-
 		_putchar('0');
 		for (y = 1 ; y <= 9 ; y++)
 		{
@@ -38,8 +34,6 @@ void times_table(void)
 				_putchar(' ');
 				_putchar((multi / 10) + '0');
 				_putchar((multi % 10) + '0');
-
-				
 			}
 		}
 	_putchar('\n');
