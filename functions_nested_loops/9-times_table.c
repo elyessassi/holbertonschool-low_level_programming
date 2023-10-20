@@ -7,34 +7,38 @@
 
 void times_table(void)
 {
-    int x;
-    int y;
+	int x;
+	int y;
+	int multi;
+	
 
 
-    for (x = 0; x <= 9 ; x++)
-    {
-        for (y = 0 ; y <= 9 ; y++)
-        {
-            if (y*x < 10)
-            {
-                printf("%d",x*y);
-                if (y < 9)
-                {
-                    printf(",");
-                    printf(" ");
-                    printf(" ");
-                }
-            }
-            else
-            {
-                printf("%d",x*y);
-                if (y < 9)
-                {
-                    printf(",");
-                    printf(" ");
-                }
-            }
-        }
-    printf("\n");
-    }
+	for (x = 0; x <= 9 ; x++)
+	{
+
+		_putchar('0');
+		for (y = 1 ; y <= 9 ; y++)
+		{
+			multi = x*y;
+			if (y < 9)
+				{
+					_putchar(',');
+				}
+			if (y*x < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(multi + '0');
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar((multi / 10) + '0');
+				_putchar((multi % 10) + '0');
+
+				
+			}
+		}
+	_putchar('\n');
+	}
 }
