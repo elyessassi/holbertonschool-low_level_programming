@@ -20,7 +20,7 @@ void times_table(void)
 		for (y = 1 ; y <= 9 ; y++)
 		{
 			multi = x*y;
-			if (y < 9)
+			if (y <= 9)
 				{
 					_putchar(',');
 				}
