@@ -18,12 +18,12 @@ void times_table(void)
 		_putchar('0');
 		for (y = 1 ; y <= 9 ; y++)
 		{
-			multi = x*y;
+			multi = x * y;
 			if (y <= 9)
-				{
-					_putchar(',');
-				}
-			if (y*x < 10)
+			{
+				_putchar(',');
+			}
+			if (y * x < 10)
 			{
 				_putchar(' ');
 				_putchar(' ');
