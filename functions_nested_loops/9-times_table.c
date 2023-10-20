@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 /**
- * 
+ *times_table - a function that prints the 9 times table
+ *@x: int to test
+ *@y: int to test
+ *@multi: int to test
 */
 
 void times_table(void)
