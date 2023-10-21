@@ -1,0 +1,17 @@
+all: school
+
+CC := compiling
+SRC := cfiles
+
+compiling:
+	gcc
+
+cfiles:
+	*.c
+
+school:
+	gcc main.c school.c -o school
+
+
+
+
