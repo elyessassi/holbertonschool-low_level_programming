@@ -1,17 +1,17 @@
-all: school
+all:
 
-CC := compiling
+CC := gccvar
+
 SRC := cfiles
 
-compiling:
+gccvar:
 	gcc
 
 cfiles:
-	*.c
+	main.c school.c
 
 school:
-	gcc main.c school.c -o school
-
+	$(CC) $(SRC) -o school
 
 
 
