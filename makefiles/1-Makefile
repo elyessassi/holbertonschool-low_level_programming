@@ -1,14 +1,8 @@
-all:
+all: school
 
-CC := gccvar
+CC = gcc
 
-SRC := cfiles
-
-gccvar:
-	gcc
-
-cfiles:
-	main.c school.c
+SRC = main.c school.c
 
 school:
 	$(CC) $(SRC) -o school
