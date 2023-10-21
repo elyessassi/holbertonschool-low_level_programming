@@ -1,0 +1,4 @@
+all:
+
+school:
+	echo school.c
