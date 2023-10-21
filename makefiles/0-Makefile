@@ -1,6 +1,6 @@
 all: school
 
-school: school.c
+school: 
 	gcc main.c school.c -o school
 	
 
