@@ -7,10 +7,10 @@ RM = rm
 all: $(OBJ)
 
 clean:
-	rm $(SRC:.c=.c~) $(SRC:.c=.c.swp) $(NAME)
+	$(RM) $(SRC:.c=.c~) $(SRC:.c=.c.swp) $(NAME)
 
 oclean:
-	rm $(OBJ)
+	$(RM) $(OBJ)
 
 fclean:
 	clean oclean
