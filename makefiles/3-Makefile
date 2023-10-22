@@ -16,6 +16,6 @@ fclean:
 	clean oclean
 
 re:
-	gcc $(SRC)
+	$(CC) $(SRC)
 
 
