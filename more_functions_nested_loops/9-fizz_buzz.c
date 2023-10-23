@@ -3,11 +3,11 @@
 
 /**
  * main - entry point
- * fizzbuzz:  fizzbuzz test
+ * fizz_buzz - fizzbuzz test
  * Return: always 0
 */
 
-void fizzbuzz(void)
+void fizz_buzz(void)
 {
 	int x;
 
@@ -40,6 +40,6 @@ void fizzbuzz(void)
 
 int main(void)
 {
-	fizzbuzz();
+	fizz_buzz();
 	return (0);
 }
