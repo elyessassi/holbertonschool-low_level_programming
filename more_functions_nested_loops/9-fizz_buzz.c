@@ -3,7 +3,7 @@
 
 /**
  * main - entry point
- * fizzbuzz - fizzbuzz test
+ * fizzbuzz:  fizzbuzz test
  * Return: always 0
 */
 
@@ -30,7 +30,7 @@ void fizzbuzz(void)
 		}
 		if ((x % 3) != 0 && (x % 5) != 0)
 		{
-			printf("%d" ,x);
+			printf("%d", x);
 			printf(" ");
 		}
 	}
