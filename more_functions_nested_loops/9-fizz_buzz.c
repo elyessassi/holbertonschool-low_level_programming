@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * fizz_buzz - fizzbuzz test
+ * main - program that prints fizzbuzz test
  * Return: always 0
 */
 
