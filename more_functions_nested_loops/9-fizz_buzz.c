@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - program that prints fizzbuzz test
- * Return: always 0
+ *main - program that prints fizzbuzz test
+ *Return: always 0
 */
 
 void fizz_buzz(void)
