@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * 
+ * print_line - print line in terminal
+ * @n: line count
 */
 
 void print_line(int n)
@@ -12,5 +13,5 @@ void print_line(int n)
 	{
 		_putchar(95);
 	}
-	return (0);
+	
 }
