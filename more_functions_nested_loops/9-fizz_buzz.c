@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- *main - entry point
- *fizzbuzz - fizzbuzz test
- *Return: always 0
+ * main - entry point
+ * fizzbuzz - fizzbuzz test
+ * Return: always 0
 */
 
 void fizzbuzz(void)
@@ -14,7 +14,7 @@ void fizzbuzz(void)
 	for (x = 1 ; x < 100 ; x++)
 	{
 		if ((x % 3) == 0 && (x % 5) == 0)
-		{	
+		{
 			printf("FizzBuzz");
 			printf(" ");
 		}
@@ -30,7 +30,7 @@ void fizzbuzz(void)
 		}
 		if ((x % 3) != 0 && (x % 5) != 0)
 		{
-			printf("%d",x );
+			printf("%d" ,x);
 			printf(" ");
 		}
 	}
