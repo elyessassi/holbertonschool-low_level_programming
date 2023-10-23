@@ -6,6 +6,7 @@
  * fizz_buzz - function that does the printing
  * Return: always 0
 */
+
 void fizz_buzz(void)
 {
 	int x;
