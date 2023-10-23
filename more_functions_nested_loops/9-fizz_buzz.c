@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *main - program that prints fizzbuzz test
- *Return: always 0
+ * main - program that prints fizz buzz game from 1 to 100
+ * fizz_buzz - function that does the printing
+ * Return: always 0
 */
-
 void fizz_buzz(void)
 {
 	int x;
