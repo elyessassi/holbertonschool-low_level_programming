@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints fizz buzz game from 1 to 100
- * fizz_buzz - function that does the printing
+ * fizz_buzz - program that prints fizz buzz game from 1 to 100
  * Return: always 0
 */
 
