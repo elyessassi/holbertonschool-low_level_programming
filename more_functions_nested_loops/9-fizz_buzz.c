@@ -3,9 +3,10 @@
 
 /**
  * main - program that prints fizz buzz game from 1 to 100
+ * Return: always 0
 */
 
-void main(void)
+int main(void)
 {
 	int x;
 
@@ -34,5 +35,6 @@ void main(void)
 	}
 	printf("Buzz");
 	printf("\n");
+	return (0);
 }
 
