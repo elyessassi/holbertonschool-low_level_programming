@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - program that prints fizz buzz game from 1 to 100
- * Return: always 0
+ * main - program that prints fizz buzz game from 1 to 100
 */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int x;
 
