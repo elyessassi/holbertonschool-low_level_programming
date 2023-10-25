@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * print_rev - print the reverse of a string
  * @s: pointer
@@ -7,9 +7,14 @@
 
 void print_rev(char *s)
 {
+	int x;
 	int i;
 
-	for (i = (strlen(s) - 1) ; i >= 0 ; i--)
+	while (s[x] !='\0') 
+	{
+		x++;
+	}
+	while (i--)
 	{
 		_putchar(s[i]);
 	}
