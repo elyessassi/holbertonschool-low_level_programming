@@ -15,9 +15,9 @@ void rev_string(char *s)
 	int j;
 
 	len = strlen(s);
-	for (i = 0 , j = (len - 1) ; i < j ; i++ , j--)
+	for (i = 0, j = (len - 1) ; i < j ; i++, j--)
 	{
-		swap= s[i];
+		swap = s[i];
 		s[i] = s[j];
 		s[j] = swap;
 	}
