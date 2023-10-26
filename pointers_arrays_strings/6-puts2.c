@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * puts2 - print number that have pair cases number
+ * puts2 - print number that have impair cases number
  * @str: string
 */
 
@@ -15,4 +15,5 @@ void puts2(char *str)
 	{
 		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
