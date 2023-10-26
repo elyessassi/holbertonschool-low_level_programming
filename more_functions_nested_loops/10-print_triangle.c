@@ -1,29 +1,27 @@
-#include "main.h"
+	#include "main.h"
 
-/**
- * 
- * 
-*/
+	/**
+	 * 
+	 * 
+	*/
 
-void print_triangle(int size)
-{
-	int x = 1;
-	int y;
-	int z;
-
-	while (x < size)
+	void print_triangle(int size)
 	{
-		for (y = 0 ; y >= (size - x) ; y++)
-		{
-			_putchar(' ');
-            
-		}
-		for (z = 1 ; z > size ; z++)
-		{
-			_putchar(67);
-			_putchar('\n');
+		int i;
+		int j;
+		int ns;
 
+		for (i = 1 ; i <= size ; i++)
+		{
+			ns = size - i;
+			for (j = 1 ; j <= size ; j++)
+			{
+				if (j <= ns)
+					_putchar(32);
+				else
+					_putchar(35);
+			}
+			_putchar('\n');
 		}
-		x++;
+		
 	}
-}
