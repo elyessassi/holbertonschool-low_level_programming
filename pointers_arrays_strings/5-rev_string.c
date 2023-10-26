@@ -4,6 +4,7 @@
 
 /**
  * rev_string - reverse a function
+ * @s: string
 */
 
 void rev_string(char *s)
@@ -14,7 +15,7 @@ void rev_string(char *s)
 	int j;
 
 	len = strlen(s);
-	for (i= 0, j = (len - 1) ;i <j ; i++, j--)
+	for (i = 0 , j = (len - 1) ; i < j ; i++ , j--)
 	{
 		swap= s[i];
 		s[i] = s[j];
