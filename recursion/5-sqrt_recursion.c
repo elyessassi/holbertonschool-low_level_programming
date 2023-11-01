@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqthelper - fonction that determines the square root of n
+ * sqthelper - square root
  * @n: integer
  * @i: integer
  * Return: i or -1
@@ -15,7 +15,7 @@ int sqthelper(int n, int i)
 	return (sqthelper(n, i + 1));
 }
 /**
- * _sqrt_recursion - fonction that determines the sign of n and executes the fonction sqthelper
+ * _sqrt_recursion - sign of n before exec
  * @n: integer
  * Return: i or -1
 */
