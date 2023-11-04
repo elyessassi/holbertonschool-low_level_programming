@@ -35,12 +35,15 @@ int main(int argc, char *argv[])
 		}
 
 	}
-	for (i = 1 ; i < argc ; i++)
+	if (argc > 1)
 	{
-		s = s + atoi(argv[i]);
+		for (i = 1 ; i < argc ; i++)
+		{
+			s = s + atoi(argv[i]);
+		}
+		printf("%d", s);
+		printf("\n");
 	}
-	printf("%d", s);
-	printf("\n");
 
 	return (0);
 
