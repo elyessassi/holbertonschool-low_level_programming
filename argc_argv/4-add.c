@@ -7,7 +7,7 @@
  * main - entry point
  * @argc: num of arguments
  * @argv: arguments
- * Return:
+ * Return: 1 if error otherwise 0
 */
 
 int main(int argc, char *argv[])
