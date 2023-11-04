@@ -14,6 +14,16 @@ int main(int argc, char *argv[])
 	int s = 0;
 	int i;
 
+	for (i = 0 ; i < argc ; i++)
+	{
+		for (i = 0 ; i < argc ; i++)
+		{
+			if (isdigit(arg[]))
+			printf("Error");
+			printf("\n");
+			return (1);
+		}
+	}
 	if (argc == 1)
 	{
 		printf("0");
@@ -21,16 +31,9 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	for (i = 1 ; i < (argc) ; i++)
-	{	
-		if (isdigit(argv[i]) == 0)
-		{
-		printf("Error");
-		printf("\n");
-		return (1);
-		}
+	{
 		s = s + atoi(argv[i]);
 	}
-	
 	printf("%d", s);
 	printf("\n");
 	return (0);
