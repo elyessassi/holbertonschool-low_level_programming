@@ -6,7 +6,7 @@
  * main - entry point
  * @argc: num of arguments
  * @argv: arguments
- * Return: 1 or 0
+ * Return:
 */
 
 int main(int argc, char *argv[])
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1 ; i < argc ; i++)
 	{
-		for (j = 1 ; j < argc ; j++)
+		for (j = 0 ; j < argc ; j++)
 		{
 			if (isdigit(argv[i][j] == 0))
 			printf("Error");
