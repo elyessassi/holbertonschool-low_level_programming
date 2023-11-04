@@ -13,12 +13,13 @@ int main(int argc, char *argv[])
 {
 	int s = 0;
 	int i;
+	int j;
 
-	for (i = 0 ; i < argc ; i++)
+	for (i = 1 ; i < argc ; i++)
 	{
-		for (i = 0 ; i < argc ; i++)
+		for (j = 1 ; j < argc ; j++)
 		{
-			if (isdigit(arg[]))
+			if (isdigit(arg[i][j] == 0))
 			printf("Error");
 			printf("\n");
 			return (1);
