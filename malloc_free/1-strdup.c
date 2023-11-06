@@ -31,10 +31,10 @@ char *_strdup(char *str)
 	char *string;
 	int i;
 
+	if (x == 0)
+		return (NULL);
 	string = malloc(x + 1);
 	if (string == NULL)
-		return (NULL);
-	else if (x == 0)
 		return (NULL);
 	else
 	{
