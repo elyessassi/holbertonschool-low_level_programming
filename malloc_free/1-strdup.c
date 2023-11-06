@@ -34,9 +34,7 @@ char *_strdup(char *str)
 	if (x == 0)
 		return (NULL);
 	string = malloc(x + 1);
-	if (string == NULL)
-		return (NULL);
-	else
+	if (string != NULL)
 	{
 		for (i = 0 ; i < x ; i++)
 		{
@@ -44,4 +42,6 @@ char *_strdup(char *str)
 		}
 		return (string);
 	}
+	else
+		return (NULL);
 }
