@@ -34,14 +34,14 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	string = malloc((x + 1) * sizeof(char));
-	if (string != NULL)
+	if (string == NULL)
 	{
+		return (NULL);
+	}
+	else
 		for (i = 0 ; i < x ; i++)
 		{
 			string[i] = str[i];
 		}
 		return (string);
-	}
-	else
-		return (NULL);
 }
