@@ -41,8 +41,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = ("");
 	}
-	nstring = malloc(ls1 + ls2);
-	if (nstring == NULL)
+	nstring = malloc(ls1 + ls2 + 1);
+	if (nstring == NULL) 
 		return (NULL);
 	for (i = 0 ; i < ls1 ; i++)
 	{
