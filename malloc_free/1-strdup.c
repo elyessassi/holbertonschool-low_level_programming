@@ -5,7 +5,7 @@
  * _strlen - fonction to return the number of characters in a string
  * @s: string
  * Return: number of caracters
-*/
+ */
 
 int _strlen(char *s)
 {
@@ -23,27 +23,26 @@ int _strlen(char *s)
  * *_strdup - the main fonction
  * @str: string
  * Return: NULL or the new string
-*/
+ */
 
 char *_strdup(char *str)
 {
-	int x = _strlen(str);
+	int x = 0;
 	char *string;
 	int i;
 
 	if (str == NULL)
 		return (NULL);
+	x = _strlen(str);
 	string = malloc((x + 1) * sizeof(char));
 	if (string == NULL)
 	{
 		return (NULL);
 	}
-	else
+	for (i = 0; i < x; i++)
 	{
-		for (i = 0 ; i < x ; i++)
-		{
-			string[i] = str[i];
-		}
-		return (string);
+		string[i] = str[i];
 	}
+	string[x] = '\0';
+	return (string);
 }
