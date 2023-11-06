@@ -2,7 +2,9 @@
 #include "main.h"
 
 /**
- * 
+ * _strlen - fonction to return the number of characters in a string
+ * @s: string
+ * Return: number of caracters
 */
 
 int _strlen(char *s)
@@ -17,24 +19,29 @@ int _strlen(char *s)
 	return (x);
 }
 
+/**
+ * *_strdup - the main fonction
+ * @str: string
+ * Return: NULL or the new string
+*/
+
 char *_strdup(char *str)
 {
-    int x = _strlen(str);
-    char *string;
-    int i;
+	int x = _strlen(str);
+	char *string;
+	int i;
 
-    string = malloc(x);
-    if (string == NULL)
-        return (NULL);
-    else
-    {
-        for (i = 0 ; i < x ; i++)
-        {
-            string[i] = str[i];
-        }
-        return (string);
-    }
-
-    
+	string = malloc(x);
+	if (string == NULL)
+		return (NULL);
+	else if (x == 0)
+		return (NULL);
+	else
+	{
+		for (i = 0 ; i < x ; i++)
+		{
+			string[i] = str[i];
+		}
+		return (string);
+	}
 }
-
