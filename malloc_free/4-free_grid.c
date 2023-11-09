@@ -2,7 +2,7 @@
 
 /**
  * free_grid - frees a 2d array
- * @**grind: double pointer
+ * @grid: double pointer
  * @height: heght of arrray
  */
 
