@@ -3,7 +3,7 @@
 /**
  * free_grid - frees a 2d array
  * @grind: double pointer
- * @height: heght of arrray 
+ * @height: heght of arrray
  */
 
 void free_grid(int **grid, int height)
