@@ -28,16 +28,16 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int ls1 = _strlen(*s1);
-	int ls2 = _strlen(*s2);
+	int ls1 = _strlen(s1);
+	int ls2 = _strlen(s2);
 	char *nstring;
 	int i;
 
-	if (s1 == NULL)
+	if (s1 == 0)
 	{
 		return (s2);
 	}
-	if (s2 == NULL)
+	if (s2 == 0)
 	{
 		return (s1);
 	}
