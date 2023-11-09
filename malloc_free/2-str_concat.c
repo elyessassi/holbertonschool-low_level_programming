@@ -28,8 +28,8 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int ls1 = _strlen(s1) == NULL ? ls1 = 0;
-	int ls2 = _strlen(s2) == NULL ? ls2 = 0;
+	int ls1 = _strlen(*s1) == NULL ? ls1 = 0;
+	int ls2 = _strlen(*s2) == NULL ? ls2 = 0;
 	char *nstring;
 	int i;
 
