@@ -23,6 +23,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		x = ls2;
 	}
+		if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	nstring = malloc(ls1 + ls2 + 1);
 	if (nstring == NULL)
 		return (NULL);
