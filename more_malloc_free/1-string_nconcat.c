@@ -1,23 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 
-/**
- * _strlen - fonction to return the number of characters in a string
- * @s: string
- * Return: number of caracters
- */
-
-int _strlen(char *s)
-{
-	int x = 0;
-
-	while (*s != '\0')
-	{
-		x++;
-		s++;
-	}
-	return (x);
-}
 
 /**
  * string_nconcat - the main fonction
@@ -29,8 +13,8 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int ls1 = _strlen(s1);
-	int ls2 = _strlen(s2);
+	int ls1 = strlen(s1);
+	int ls2 = strlen(s2);
 	char *nstring;
 	int i;
 	int x = n;
