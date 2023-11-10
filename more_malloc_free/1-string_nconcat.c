@@ -31,9 +31,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (x >= ls2)
 	{
-		n = ls2;
+		x = ls2;
 	}
-	array = malloc(sizeof(char) * (ls1 + x +10));
+	array = malloc(sizeof(char) * (ls1 + x + 1));
 	if (array == NULL)
 	{
 		return (NULL);
