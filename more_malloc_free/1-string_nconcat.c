@@ -13,6 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i;
+	unsigned int j;
 	unsigned int ls1;
 	unsigned int ls2;
 	char *array;
@@ -40,9 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		array[i] = s1[i];
 	}
-	for (i = 0; i < n; i++)
+	for (j = 0; j < n; j++)
 	{
-		array[i + ls1] = s2[i];
+		array[i] = s2[j];
+		i++;
 	}
+	array[i] = '\0'
 	return (array);
 }
