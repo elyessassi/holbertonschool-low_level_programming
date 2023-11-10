@@ -2,7 +2,6 @@
 #include "main.h"
 #include <string.h>
 
-
 /**
  * string_nconcat - the main fonction
  * @s1: string 1
@@ -14,21 +13,21 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i;
-	int ls1 = strlen(s1);
-	int ls2 = strlen(s2);
+	int ls1;
+	int ls2;
 	char *array;
 	int x = n;
 
 	if (s1 == NULL)
 	{
 		s1 = "";
-		ls1 = 0;
 	}
 	if (s2 == NULL)
 	{
 		s2 = "";
-		ls2 = 0;
 	}
+	ls1 = strlen(s1);
+	ls2 = strlen(s2);
 	if (x >= ls2)
 	{
 		x = ls2;
@@ -38,11 +37,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0 ; i < ls1 ; i++)
+	for (i = 0; i < ls1; i++)
 	{
 		array[i] = s1[i];
 	}
-	for (i = 0 ; i < x ; i++)
+	for (i = 0; i < x; i++)
 	{
 		array[i + ls1] = s2[i];
 	}
