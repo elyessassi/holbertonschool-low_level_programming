@@ -1,56 +1,44 @@
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
+
 
 /**
- * _strlen - fonction to return the number of characters in a string
- * @s: string
- * Return: number of caracters
- */
-
-int _strlen(char *s)
-{
-	int x = 0;
-
-	while (*s != '\0')
-	{
-		x++;
-		s++;
-	}
-	return (x);
-}
-
-/**
- * *str_concat - the main fonction
+ * str_concat - the main fonction
  * @s1: string 1
  * @s2: string 2
  * Return: NULL or the new string
  */
 
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2);
 {
-	int ls1 = _strlen(s1);
-	int ls2 = _strlen(s2);
-	char *nstring;
 	int i;
+	int ls1 = strlen(s1);
+	int ls2 = strlen(s2);
+	char *array;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 	{
-		return (s2);
+		s1 = "";
+		ls1 = 0;
 	}
-	if (s2 == 0)
+	if (s2 == NULL)
 	{
-		return (s1);
+		s2 = "";
+		ls2 = 0;
 	}
-	nstring = malloc(ls1 + ls2 + 1);
-	if (nstring == NULL)
+	array = malloc(sizeof(char) * (ls1 + ls2 +1));
+	if (array == NULL)
+	{
 		return (NULL);
-	for (i = 0; i < ls1; i++)
-	{
-		nstring[i] = s1[i];
 	}
-	for (i = 0; i < ls2; i++)
+	for (i = 0 ; i < ls1 ; i++)
 	{
-		nstring[i + ls1] = s2[i];
+		array[i] = s1[i];
 	}
-	return (nstring);
+	for (i = 0 ; i < ls2 ; i++)
+	{
+		array[i + ls1] = s2[i];
+	}
+	return (array);
 }
