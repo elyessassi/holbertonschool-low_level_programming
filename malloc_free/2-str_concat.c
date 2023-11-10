@@ -13,20 +13,20 @@ char *str_concat(char *s1, char *s2)
 {
 	int i;
 	int j;
-	int ls1 = strlen(s1);
-	int ls2 = strlen(s2);
+	int ls1;
+	int ls2;
 	char *array;
 
 	if (s1 == NULL)
 	{
 		s1 = "";
-		ls1 = 0;
 	}
 	if (s2 == NULL)
 	{
 		s2 = "";
-		ls2 = 0;
 	}
+	ls1 = strlen(s1);
+	ls2 = strlen(s2);
 	array = malloc(sizeof(char) * (ls1 + ls2 + 1));
 	if (array == NULL)
 	{
