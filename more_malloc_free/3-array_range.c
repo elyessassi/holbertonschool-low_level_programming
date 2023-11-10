@@ -1,4 +1,4 @@
-#include <stdlib.>
+#include <stdlib.h>
 
 /**
  * array_range - fonction
@@ -9,7 +9,7 @@
 
 int *array_range(int min, int max)
 {
-	char *array;
+	int *array;
 	int i;
 	int m;
 
@@ -17,15 +17,15 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	m = max - min
-	array(malloc(sizeof(int) * m))
-	if (array = NULL)
+	m = max - min;
+	array = (malloc(sizeof(int) * m));
+	if (array == NULL)
 	{
 		return (NULL);
 	}
 	for (i = min ; i <= max ; i++)
 	{
-		array[i] = i
+		array[i] = i;
 	}
 	return (array);
 }
