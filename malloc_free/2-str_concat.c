@@ -2,7 +2,6 @@
 #include "main.h"
 #include <string.h>
 
-
 /**
  * str_concat - the main fonction
  * @s1: string 1
@@ -10,7 +9,7 @@
  * Return: NULL or the new string
  */
 
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	int i;
 	int j;
@@ -28,16 +27,16 @@ char *str_concat(char *s1, char *s2);
 		s2 = "";
 		ls2 = 0;
 	}
-	array = malloc(sizeof(char) * (ls1 + ls2 +1));
+	array = malloc(sizeof(char) * (ls1 + ls2 + 1));
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0 ; i < ls1 ; i++)
+	for (i = 0; i < ls1; i++)
 	{
 		array[i] = s1[i];
 	}
-	for (j = 0 ; j < ls2 ; j++)
+	for (j = 0; j < ls2; j++)
 	{
 		array[i] = s2[j];
 		i++;
