@@ -12,3 +12,8 @@ struct dog
     float age;
     char *owner;
 }
+
+int main(void)
+{
+    
+}
