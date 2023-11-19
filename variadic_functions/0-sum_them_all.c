@@ -5,6 +5,7 @@
 /**
  * sum_them_all - fonction that sums all arguments
  * @n: numbre of variadic arguments
+ * Return: sum of arguments
 */
 
 int sum_them_all(const unsigned int n, ...)
