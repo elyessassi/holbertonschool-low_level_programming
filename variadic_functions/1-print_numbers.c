@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(z, n);
 	printf("%d", va_arg(z, unsigned int));
-	if (n <= 0)
+	if (n == 0)
 	{
 		printf("\n");
 	}
