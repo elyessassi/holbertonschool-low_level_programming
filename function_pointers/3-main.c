@@ -21,18 +21,18 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	ptr = get_op_func(argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 	if (ptr == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*argv[2] == '/' && *argv[3] == 0) || (*argv[2] == '%' && *argv[3] == 0))
+	if ((*argv[2] == '/' && *argv[3] == 0) || (*argv[2] == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
 	ptr = get_op_func(argv[2]);
 	printf("%d", ptr(num1, num2));
 	printf("\n");
