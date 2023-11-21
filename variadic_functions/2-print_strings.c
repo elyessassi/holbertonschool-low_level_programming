@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		printf("\n");
 	}
-	else
+	else if (va_arg(z, char *) != NULL)
 	{
 		printf("%s", va_arg(z, char *));
 		if (separator != NULL)
@@ -39,4 +39,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("\n");
 		}
 	}
+    else
+        printf("nill");
 }
