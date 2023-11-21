@@ -33,5 +33,5 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	ptr = get_op_func(argv[2]);
-	return ("%d", ptr(num1, num2));
+	return (ptr(num1, num2));
 }
