@@ -77,8 +77,7 @@ void print_all(const char * const format, ...)
 				}
 				break;
 			}
-			else
-				j++;
+			j++;
 		}
 		j = 0;
 		i++;
