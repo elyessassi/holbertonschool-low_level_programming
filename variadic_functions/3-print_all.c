@@ -76,7 +76,7 @@ void print_all(const char *const format, ...)
 		{'\0', NULL},
 	};
 	va_start(x, format);
-	while (format && format[i])
+	while (format[i])
 	{
 		j = 0;
 		while (types[j].character)
