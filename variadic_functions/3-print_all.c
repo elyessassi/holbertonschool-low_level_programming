@@ -10,7 +10,7 @@
  * @a: allocated places
 */
 
-void pc(va_list a)
+void pc()
 {
 
 	printf("%c", va_arg(a, int));
@@ -21,7 +21,7 @@ void pc(va_list a)
  * @a: allocated places
 */
 
-void pi(va_list a)
+void pi()
 {
 
 	printf("%d", va_arg(a, int));
@@ -32,7 +32,7 @@ void pi(va_list a)
  * @a: allocated places
 */
 
-void pf(va_list a)
+void pf()
 {
 
 	printf("%f", va_arg(a, double));
@@ -43,7 +43,7 @@ void pf(va_list a)
  * @a: allocated places
 */
 
-void ps(va_list a)
+void ps()
 {
 	char *str = va_arg(a, char *);
 
@@ -84,7 +84,7 @@ void print_all(const char *const format, ...)
 			if (format[i] == types[j].character)
 			{
 				printf("%s", sep1);
-				types[j].fptr(x);
+				types[j].fptr();
 				sep1 = sep2;
 			}
 			j++;
