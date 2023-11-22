@@ -46,7 +46,7 @@ void pf(va_list a)
 void ps(va_list a)
 {
 	char *str = va_arg(a, char *);
-	
+
 	if (!str)
 	{
 		str = "(nil)";
