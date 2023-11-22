@@ -70,7 +70,7 @@ void print_all(const char * const format, ...)
 			{
 				ffptr = typelist[j].fptr;
 				ffptr(numarg);
-				if (k < len - 2)
+				if (k < len - 1)
 				{
 					printf(", ");
 					k++;
