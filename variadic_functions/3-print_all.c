@@ -12,6 +12,7 @@
 
 void pc(va_list a)
 {
+
 	printf("%c", va_arg(a, int));
 }
 
@@ -22,6 +23,7 @@ void pc(va_list a)
 
 void pi(va_list a)
 {
+
 	printf("%d", va_arg(a, int));
 }
 
@@ -32,6 +34,7 @@ void pi(va_list a)
 
 void pf(va_list a)
 {
+
 	printf("%f", va_arg(a, double));
 }
 
@@ -42,7 +45,12 @@ void pf(va_list a)
 
 void ps(va_list a)
 {
-	printf("%s", va_arg(a, char *));
+	char *str = va_arg(a, char *);
+	if (!str)
+	{
+		str = "(nil)";
+	}
+	printf("%s", str);
 }
 
 
@@ -51,37 +59,38 @@ void ps(va_list a)
  * @format: string that has format characters
 */
 
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
-	va_list numarg;
-	type_t typelist[] = {{'c', pc}, {'i', pi}, {'f', pf}, {'s', ps}};
 	int i = 0;
-	int j = 0;
-	int k = 0;
-	int len = strlen(format);
-	void (*ffptr)(va_list);
+	int j;
+	char *sep1 = "";
+	char *sep2 = ", ";
+	va_list x;
 
-	va_start(numarg, format);
-	while (i < len)
+	type_t types[] = {
+		{'c', pc},
+		{'i', pi},
+		{'f', pf},
+		{'s', ps},
+		{'\0', NULL},
+	};
+	va_start(x, format);
+	while (format && format[i])
 	{
-		while (j < 4)
+		j = 0;
+		while (types[j].character)
 		{
-			if (format[i] == typelist[j].character)
+			if (format[i] == types[j].character)
 			{
-				ffptr = typelist[j].fptr;
-				ffptr(numarg);
-				if (k < len - 1)
-				{
-					printf(", ");
-					k++;
-				}
-				break;
+				printf("%s", sep1);
+				types[j].fptr(x);
+				sep1 = sep2;
 			}
 			j++;
 		}
-		j = 0;
 		i++;
 	}
 	printf("\n");
-	va_end(numarg);
+	va_end(x);
 }
+
