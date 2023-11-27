@@ -27,7 +27,7 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	int x = 0;
+	int x;
 	char *string;
 	int i;
 
