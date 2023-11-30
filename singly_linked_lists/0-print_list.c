@@ -3,7 +3,9 @@
 #include <stdlib.h>
 
 /**
- * 
+ * print_list - func that prints lists
+ * @h: linked list
+ * Return: number of elements
 */
 
 size_t print_list(const list_t *h)
