@@ -3,7 +3,7 @@
 #include <fcntl.h>
 
 /**
- * read_textfile: func that reads a file and writes it to the standard output
+ * read_textfile - func that reads a file and writes it to the standard output
  * @filename: file name
  * @letters: numbers of letters to display
  * Return: 0 if failed or the number of letters displayed
