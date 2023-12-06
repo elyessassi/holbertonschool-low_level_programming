@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 
     if (argc != 3)
     {
-        dprintf(3, "Usage: cp file_from file_to\n");
+        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
         exit(97);
     }
     fd = open(argv[1], O_RDONLY);
     if (fd == -1)
     {
-        dprintf(3, "Error: Can't read from file %s\n", argv[1]);
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
     }
     x = read(fd, buffer, 10000);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     y = write(fd, buffer, x);
     if (y == -1)
     {
-        dprintf(3, "Error: Can't write to %s\n", argv[2]);
+        dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
         exit(99);
     }
     z = close(fd1);
