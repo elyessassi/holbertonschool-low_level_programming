@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     x = read(fd, buffer, 10000);
     close(fd);
     fd1 = open(argv[2], O_WRONLY | O_TRUNC);
-    y = write(fd1, buffer, x);
+    y = write(fd, buffer, x);
     if (y == -1)
     {
         dprintf(3, "Error: Can't write to %s\n", argv[2]);
