@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	z = close(fd1);
 	if (z == -1)
 	{
-		dprintf(3, "Error: Can't close fd %d", fd1);
+		fprintf(3, "Error: Can't close fd %d", fd1);
 		exit(100);
 	}
 	return (0);
