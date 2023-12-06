@@ -29,11 +29,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	x = read(fd, buffer, 10000);
-	if (x == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
 	close(fd);
 	fd1 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	y = write(fd, buffer, x);
