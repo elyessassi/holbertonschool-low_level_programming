@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     }
     x = read(fd, buffer, 10000);
     close(fd);
-    fd1 = open(argv[2], O_WRONLY | O_TRUNC);
+    fd1 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT);
     y = write(fd, buffer, x);
     if (y == -1)
     {
