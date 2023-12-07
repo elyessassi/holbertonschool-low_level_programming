@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd1 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	if (y == -1)
+	if (fd1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
