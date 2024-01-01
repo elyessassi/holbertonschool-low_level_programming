@@ -15,3 +15,4 @@ char *_strcat(char *dest, char *src);
 void _puts_recursion(char *s);
 int factorial(int n);
 char *_strncat(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
