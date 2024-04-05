@@ -1,9 +1,11 @@
 #include "search_algos.h"
 
 /**
+*linear_search - linear searches a value
 *@array: array to search in
 *@size: size of array
 *@value: value to search for
+*Return: index of value
 */
 
 int linear_search(int *array, size_t size, int value)
