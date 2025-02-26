@@ -1,7 +1,8 @@
 #include "main.h"
+#include "string.h"
 
 /**
- * _strncpy - copies a number of bytes of a string to an other
+ * _strncpy - copies a string to an other string
  * @dest: destination
  * @src: source
  * @n: number of letters
@@ -10,17 +11,16 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i, src_size;
 
-	while (i < n && src[i] != '\0')
+	src_size = strlen(src);
+	for (i = 0 ; i < n ; i++)
 	{
-		dest[i] = src[i];
-		i++;
+		if (i >= src_size)
+			dest[i] = '\0';
+		else
+			dest[i] = src[i];
 	}
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	dest[i] = '\0';
+
 	return (dest);
 }
