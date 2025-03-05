@@ -24,3 +24,5 @@ int is_separator(char x);
 char *leet(char *);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+int exists(char c, char *s);
