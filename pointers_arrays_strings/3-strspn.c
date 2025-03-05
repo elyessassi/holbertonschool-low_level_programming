@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * _strspn - a function that searches a string for any of a set of bytes
+ * _strspn - a function that gets the length of a prefix substring
  * @s: string to search in
- * @accept: set of bytes
- * Return: length of string that has the set of bytes
+ * @accept: substring
+ * Return: number of bytes in the initial segment of s  of bytes from accept
  */
 
 unsigned int _strspn(char *s, char *accept)
