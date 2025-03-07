@@ -4,7 +4,7 @@
 /**
  * binary_to_uint - function that converts a binary number to decimal
  * @b: binary number
- * Return: decimal number or 0
+ * Return: decimal number or 0 
  */
 
 unsigned int binary_to_uint(const char *b)
