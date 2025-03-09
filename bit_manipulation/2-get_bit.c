@@ -57,7 +57,7 @@ int power(int x, int y)
 
 int binary_length(unsigned long int n)
 {
-	int i = 0, x = n;
+	int i = 1, x = n;
 
 	while (x >= power(2, i))
 	{
