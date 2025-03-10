@@ -3,33 +3,26 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * 
+ * main - a program that copies the content of a file to another file
+ * @argc: number of arguments
+ * @argv: the arguments
+ * Return: 0
 */
 
 int main(int argc, char *argv[])
 {
-	int fd;
-	int x;
-	int y;
-	int fd1;
-	int close1;
-	int close2;
-	char buffer[10000];
+	int fd, x, y, fd1, close1, close2;
+	char buffer[1024];
 
 	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+		printf_and_exit(STDERR_FILENO, "Usage: cp file_from file_to\n", "", 97);
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	x = read(fd, buffer, 10000);
+		printf_and_exit(2, "Error: Can't read from file %s\n", argv[1], 98);
+	x = read(fd, buffer, 1024);
 	if (x == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -60,8 +53,18 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	return (0);
+}
 
+/**
+ * printf_and_exit - a function that prints a message and exits
+ * @std: could be stdout or stderr
+ * @message: the message to print
+ * @filename: the name of the file
+ * @exit_num: exit code
+ */
 
-
-	
+void printf_and_exit(int std, char *message, char *filename, int exit_num)
+{
+	dprintf(std, message, filename);
+	exit(exit_num);
 }
