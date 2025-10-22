@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int neg = 0;
-	int num = 0;
+	long unsigned int num = 0;
 	int there_is_a_num = 0;
 
 	while (*s != '\0')
